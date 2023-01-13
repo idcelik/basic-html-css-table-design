@@ -1,0 +1,67 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #EB3349;
+    background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+    background: linear-gradient(to right, #F45C43, #EB3349);
+}
+
+table {
+    width: 900px;
+    margin: 0px auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+    /*  border collapse olduğundan uygulanmaz ama alttaki: */
+    overflow: hidden;
+    /* taşmaları engellemek için overflow kullanılır, ve radius çalıştı */
+    box-shadow: 0px 0px 20px black;
+}
+
+thead {
+    background-color: rgb(90, 27, 106);
+    color: white;
+    line-height: 50px;
+    text-align: left;
+}
+
+thead tr th:first-child {
+    padding-left: 40px;
+}
+
+tbody {
+    line-height: 45px;
+}
+
+tbody tr td:first-child {
+    padding-left: 40px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(180, 180, 180);
+    color: black;
+}
+
+tbody tr {
+    transition: all .5s ease;
+}
+
+tbody tr:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+tfoot {
+    background-color: rgb(90, 27, 106);
+    color: white;
+    line-height: 40px;
+    text-align: left;
+}
+
+tfoot tr td {
+    padding-left: 40px;
+}
